@@ -67,12 +67,13 @@
 		F2292834256F27C5006061E0 /* movies-ios */ = {
 			isa = PBXGroup;
 			children = (
+				F2DA09B4257017DD00226AD5 /* CustomViews */,
+				F2DA09922570000800226AD5 /* Managers */,
 				F2DA09AA257012A500226AD5 /* Models */,
-				F2DA099F25700A6D00226AD5 /* Utils */,
+				F2DA09932570000F00226AD5 /* Screens */,
 				F2DA09962570004100226AD5 /* Storyboards */,
 				F2DA09942570002E00226AD5 /* Support */,
-				F2DA09932570000F00226AD5 /* Screens */,
-				F2DA09922570000800226AD5 /* Managers */,
+				F2DA099F25700A6D00226AD5 /* Utils */,
 			);
 			path = "movies-ios";
 			sourceTree = "<group>";
@@ -130,6 +131,29 @@
 				F2DA09AE257012CF00226AD5 /* Movie.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		F2DA09B4257017DD00226AD5 /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				F2DA09B5257017EA00226AD5 /* Cells */,
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
+		F2DA09B5257017EA00226AD5 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				F2DA09B6257017F000226AD5 /* MovieCell */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		F2DA09B6257017F000226AD5 /* MovieCell */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = MovieCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
