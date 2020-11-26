@@ -9,21 +9,21 @@
 /* Begin PBXBuildFile section */
 		F2292836256F27C5006061E0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2292835256F27C5006061E0 /* AppDelegate.swift */; };
 		F2292838256F27C5006061E0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2292837256F27C5006061E0 /* SceneDelegate.swift */; };
-		F229283A256F27C5006061E0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2292839256F27C5006061E0 /* ViewController.swift */; };
 		F229283D256F27C5006061E0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F229283B256F27C5006061E0 /* Main.storyboard */; };
 		F229283F256F27C7006061E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F229283E256F27C7006061E0 /* Assets.xcassets */; };
 		F2292842256F27C7006061E0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2292840256F27C7006061E0 /* LaunchScreen.storyboard */; };
+		F2DA0998257000AF00226AD5 /* MoviesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2DA0997257000AF00226AD5 /* MoviesVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		F2292832256F27C5006061E0 /* movies-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "movies-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2292835256F27C5006061E0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F2292837256F27C5006061E0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F2292839256F27C5006061E0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F229283C256F27C5006061E0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F229283E256F27C7006061E0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F2292841256F27C7006061E0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F2292843256F27C7006061E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F2DA0997257000AF00226AD5 /* MoviesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +56,47 @@
 		F2292834256F27C5006061E0 /* movies-ios */ = {
 			isa = PBXGroup;
 			children = (
-				F2292835256F27C5006061E0 /* AppDelegate.swift */,
-				F2292837256F27C5006061E0 /* SceneDelegate.swift */,
-				F2292839256F27C5006061E0 /* ViewController.swift */,
-				F229283B256F27C5006061E0 /* Main.storyboard */,
-				F229283E256F27C7006061E0 /* Assets.xcassets */,
-				F2292840256F27C7006061E0 /* LaunchScreen.storyboard */,
-				F2292843256F27C7006061E0 /* Info.plist */,
+				F2DA09962570004100226AD5 /* Storyboards */,
+				F2DA09942570002E00226AD5 /* Support */,
+				F2DA09932570000F00226AD5 /* Screens */,
+				F2DA09922570000800226AD5 /* Managers */,
 			);
 			path = "movies-ios";
+			sourceTree = "<group>";
+		};
+		F2DA09922570000800226AD5 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		F2DA09932570000F00226AD5 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				F2DA0997257000AF00226AD5 /* MoviesVC.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		F2DA09942570002E00226AD5 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				F2292835256F27C5006061E0 /* AppDelegate.swift */,
+				F2292837256F27C5006061E0 /* SceneDelegate.swift */,
+				F229283E256F27C7006061E0 /* Assets.xcassets */,
+				F2292843256F27C7006061E0 /* Info.plist */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		F2DA09962570004100226AD5 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				F229283B256F27C5006061E0 /* Main.storyboard */,
+				F2292840256F27C7006061E0 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +169,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F229283A256F27C5006061E0 /* ViewController.swift in Sources */,
+				F2DA0998257000AF00226AD5 /* MoviesVC.swift in Sources */,
 				F2292836256F27C5006061E0 /* AppDelegate.swift in Sources */,
 				F2292838256F27C5006061E0 /* SceneDelegate.swift in Sources */,
 			);
@@ -288,7 +320,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PA7L263H2S;
-				INFOPLIST_FILE = "movies-ios/Info.plist";
+				INFOPLIST_FILE = "movies-ios/Support/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -307,7 +339,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PA7L263H2S;
-				INFOPLIST_FILE = "movies-ios/Info.plist";
+				INFOPLIST_FILE = "movies-ios/Support/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
