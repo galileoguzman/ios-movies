@@ -37,12 +37,19 @@
                                         </collectionViewCellContentView>
                                     </collectionViewCell>
                                 </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="GoA-EZ-ibs"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="GwP-PQ-oNw"/>
+                                </connections>
                             </collectionView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="3sv-Sz-WEh"/>
+                    <connections>
+                        <outlet property="collectionView" destination="bL9-qR-Rqo" id="Yhk-xO-lcg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

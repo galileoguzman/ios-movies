@@ -19,7 +19,7 @@ class NetworkManager {
     
     private init() {}
     
-    func getNowPlaying(completed: @escaping(Result<PopularMovies, NetworkErrors>) -> Void ) {
+    func getPopularMovies(completed: @escaping(Result<PopularMovies, NetworkErrors>) -> Void ) {
         let endpoint = BASE_URL + "/3/movie/popular?api_key=" + API_KEY
         
         guard let url = URL(string: endpoint) else {
